@@ -74,7 +74,6 @@ function FadingImage({ src }) {
   const [hovered, setHover] = useState(false);
   useFrame(() => {
     offset.current = THREE.MathUtils.lerp(offset.current, 0.0, 0.05);
-    // console.log(offset.current)
     ref.current.offset2 = new THREE.Vector2(
       0.0,
       -(0.0 - offset.current) * 0.0003
